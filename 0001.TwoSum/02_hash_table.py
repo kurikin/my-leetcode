@@ -6,5 +6,5 @@ class Solution:
 
         for j in range(len(nums)):
             complement = target - nums[j]
-            if complement in hash_nums and hashmap[complement] != j:
+            if complement in hash_nums and hash_nums[complement] != j:
                 return [j, hash_nums[complement]]
